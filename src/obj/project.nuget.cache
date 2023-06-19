@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "4N5sYaSjAXEMykdg/Sp1zmiHafCDIElVrmg2wJTH4f/WdyORVvG+sQ67sdbexd0FclJaJDrROomxceSIkh6TCQ==",
+  "success": true,
+  "projectFilePath": "D:\\Microservices\\SolidApi_AppBooking\\src\\src.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://packagesource'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    }
+  ]
+}
