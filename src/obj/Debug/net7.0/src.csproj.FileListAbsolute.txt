@@ -33,15 +33,9 @@ D:\Microservices\SolidApi_AppBooking\src\obj\Debug\net7.0\src.pdb
 D:\Microservices\SolidApi_AppBooking\src\obj\Debug\net7.0\src.genruntimeconfig.cache
 D:\Microservices\SolidApi_AppBooking\src\obj\Debug\net7.0\ref\src.dll
 D:\Microservices\SolidApi_AppBooking\src\bin\Debug\net7.0\Humanizer.dll
-D:\Microservices\SolidApi_AppBooking\src\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
-D:\Microservices\SolidApi_AppBooking\src\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-D:\Microservices\SolidApi_AppBooking\src\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 D:\Microservices\SolidApi_AppBooking\src\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
 D:\Microservices\SolidApi_AppBooking\src\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
 D:\Microservices\SolidApi_AppBooking\src\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
-D:\Microservices\SolidApi_AppBooking\src\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
-D:\Microservices\SolidApi_AppBooking\src\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
-D:\Microservices\SolidApi_AppBooking\src\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
 D:\Microservices\SolidApi_AppBooking\src\bin\Debug\net7.0\Mono.TextTemplating.dll
 D:\Microservices\SolidApi_AppBooking\src\bin\Debug\net7.0\Npgsql.dll
 D:\Microservices\SolidApi_AppBooking\src\bin\Debug\net7.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll

@@ -1,0 +1,11 @@
+﻿services:
+
+  PostgreSQL:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: Appt_Db
+    ports:
+      - 5434:5432
