@@ -15,12 +15,20 @@ namespace src.Services
         }
 
         //Create Doctor ID --> ONCE ONLY
-        public async Task Create(string doctorName)
+        public async Task<Doctor> Create(string doctorName)
         {
+            //Check if a SINGLE doctor's name exist in the DB
+
+            if (_doctorRepository.IsAtleastOneDoctorExist())
+            {
+                throw new DbEntryExistException();
+            }
+   
+            
             // check if the name is not empty
             if (string.IsNullOrEmpty(doctorName))
             {
-                throw new DoctorNameEmptyException();
+                throw new NameEmptyException();
             }
 
 
@@ -28,11 +36,14 @@ namespace src.Services
             var exists = _doctorRepository.DoctorNameIsExist(doctorName);
             if (exists)
             {
-                throw new DoctorNameAlreadyExistsException(doctorName);
+                throw new NameAlreadyExistsException(doctorName);
             }
+
             var _doctor = new Doctor { DoctorName = doctorName, DoctorId = Guid.NewGuid() };
 
             await _doctorRepository.AddDoctor(_doctor);
+
+            return _doctor;
         }
 
     }

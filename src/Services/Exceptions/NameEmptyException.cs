@@ -3,9 +3,9 @@
 namespace src.Services.Exceptions
 {
     [Serializable]
-    internal class DoctorNameEmptyException : Exception
+    internal class NameEmptyException : Exception
     {
-        public DoctorNameEmptyException() : base("Doctor name cannot be empty...")
+        public NameEmptyException() : base("Doctor name cannot be empty...")
         {
         }
 

@@ -1,7 +1,9 @@
-﻿namespace src.Services
+﻿using src.Entities;
+
+namespace src.Services
 {
     public interface IDoctorService
     {
-        public Task Create(string categoryName);
+        public Task<Doctor> Create(string categoryName);
     }
 }

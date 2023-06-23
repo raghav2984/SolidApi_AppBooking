@@ -30,7 +30,7 @@ namespace src.Database
         {
             services.AddDbContext<Appt_EF_DataContext>(options =>
             {
-                options.UseNpgsql(configuration.GetConnectionString("Postgres"));
+                options.UseNpgsql(configuration.GetConnectionString("Appt_Db"));
             });
             return services;
         }

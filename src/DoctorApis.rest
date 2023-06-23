@@ -1,0 +1,9 @@
+@url = http://localhost:5283
+
+### 
+POST {{url}}/doctor
+Content-Type: application/json
+
+{
+    "doctorName": "ARTC"
+}

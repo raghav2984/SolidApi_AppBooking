@@ -40,3 +40,9 @@ D:\Microservices\SolidApi_AppBooking\src\bin\Debug\net7.0\Mono.TextTemplating.dl
 D:\Microservices\SolidApi_AppBooking\src\bin\Debug\net7.0\Npgsql.dll
 D:\Microservices\SolidApi_AppBooking\src\bin\Debug\net7.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 D:\Microservices\SolidApi_AppBooking\src\bin\Debug\net7.0\System.CodeDom.dll
+D:\Microservices\SolidApi_AppBooking\src\bin\Debug\net7.0\System.Data.SqlClient.dll
+D:\Microservices\SolidApi_AppBooking\src\bin\Debug\net7.0\runtimes\win-arm64\native\sni.dll
+D:\Microservices\SolidApi_AppBooking\src\bin\Debug\net7.0\runtimes\win-x64\native\sni.dll
+D:\Microservices\SolidApi_AppBooking\src\bin\Debug\net7.0\runtimes\win-x86\native\sni.dll
+D:\Microservices\SolidApi_AppBooking\src\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Microservices\SolidApi_AppBooking\src\bin\Debug\net7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

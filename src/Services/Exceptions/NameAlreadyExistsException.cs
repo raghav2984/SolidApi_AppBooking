@@ -3,13 +3,13 @@
 namespace src.Services.Exceptions
 {
     [Serializable]
-    internal class DoctorNameAlreadyExistsException : Exception
+    internal class NameAlreadyExistsException : Exception
     {
         //public DoctorNameAlreadyExistsException()
         //{
         //}
 
-        public DoctorNameAlreadyExistsException(string? doctorName) : base("Dotor with the name " + doctorName + " exisit. Cannot create another...") 
+        public NameAlreadyExistsException(string? doctorName) : base("Name : " + doctorName + " exist. Cannot create another entry..." + Environment.NewLine) 
         {
         }
  
