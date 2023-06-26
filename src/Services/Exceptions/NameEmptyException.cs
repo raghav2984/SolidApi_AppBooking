@@ -5,7 +5,7 @@ namespace src.Services.Exceptions
     [Serializable]
     internal class NameEmptyException : Exception
     {
-        public NameEmptyException() : base("Doctor name cannot be empty...")
+        public NameEmptyException() : base(Environment.NewLine + "Name cannot be empty..." + Environment.NewLine)
         {
         }
 

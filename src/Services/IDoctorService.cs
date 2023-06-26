@@ -4,6 +4,6 @@ namespace src.Services
 {
     public interface IDoctorService
     {
-        public Task<Doctor> Create(string categoryName);
+        public Task<Doctor> Create(string doctorName);
     }
 }

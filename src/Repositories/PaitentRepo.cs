@@ -13,7 +13,7 @@ namespace src.Repositories
 
         public bool PatientNameIsExist(string name)
         {
-            return _db.Doctor.Any(x => x.DoctorName == name);
+            return _db.Patient.Any(x => x.PatientName == name);
         }
 
         public async Task AddPatient(Patient patient)

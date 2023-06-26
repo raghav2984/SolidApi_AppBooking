@@ -7,3 +7,21 @@ Content-Type: application/json
 {
     "doctorName": "ARTC"
 }
+
+###
+POST {{url}}/patient
+Content-Type: application/json
+
+{
+    "patientName": ""
+}
+
+###
+POST {{url}}/appointment/create/{patientName}/{doctorName}/{startTime}
+Content-Type: application/json
+
+{
+    "patientName" : "Jacob"
+    "doctorName" : "ARTC"
+    "startTime" : "22/02/2023 04:00"
+}

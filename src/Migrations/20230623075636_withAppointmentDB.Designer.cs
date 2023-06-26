@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using src.Database;
@@ -11,13 +12,15 @@ using src.Database;
 namespace src.Migrations
 {
     [DbContext(typeof(Appt_EF_DataContext))]
-    partial class Appt_EF_DataContextModelSnapshot : ModelSnapshot
+    [Migration("20230623075636_withAppointmentDB")]
+    partial class withAppointmentDB
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasDefaultSchema("Appt_Db")
+                .HasDefaultSchema("Appointment_Db")
                 .HasAnnotation("ProductVersion", "7.0.7")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
@@ -32,29 +35,18 @@ namespace src.Migrations
                     b.Property<decimal>("Cost")
                         .HasColumnType("numeric");
 
-                    b.Property<string>("DoctorName")
-                        .IsRequired()
-                        .HasColumnType("text");
-
                     b.Property<DateTime>("End")
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<bool>("IsReservedDescription")
                         .HasColumnType("boolean");
 
-                    b.Property<Guid>("PatientId")
-                        .HasColumnType("uuid");
-
-                    b.Property<string>("PatientName")
-                        .IsRequired()
-                        .HasColumnType("text");
-
                     b.Property<DateTime>("Start")
                         .HasColumnType("timestamp with time zone");
 
                     b.HasKey("BookingId");
 
-                    b.ToTable("appointment", "Appt_Db");
+                    b.ToTable("appointment", "Appointment_Db");
                 });
 
             modelBuilder.Entity("src.Entities.Doctor", b =>
@@ -69,7 +61,7 @@ namespace src.Migrations
 
                     b.HasKey("DoctorId");
 
-                    b.ToTable("doctor", "Appt_Db");
+                    b.ToTable("doctor", "Appointment_Db");
                 });
 
             modelBuilder.Entity("src.Entities.Patient", b =>
@@ -84,7 +76,7 @@ namespace src.Migrations
 
                     b.HasKey("PatientId");
 
-                    b.ToTable("patient", "Appt_Db");
+                    b.ToTable("patient", "Appointment_Db");
                 });
 #pragma warning restore 612, 618
         }

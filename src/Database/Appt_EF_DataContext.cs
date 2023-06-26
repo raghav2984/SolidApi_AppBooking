@@ -8,6 +8,7 @@ namespace src.Database
     {
         public DbSet<Doctor> Doctor { get; set; }
         public DbSet<Patient> Patient { get; set; }
+        public DbSet<Appointment> Appointments { get; set; }
 
         public Appt_EF_DataContext(DbContextOptions<Appt_EF_DataContext> options) : base(options) { }
 
@@ -21,6 +22,8 @@ namespace src.Database
             modelBuilder.HasDefaultSchema("Appt_Db");
             modelBuilder.ApplyConfigurationsFromAssembly(GetType().Assembly);
 
+            //Can be implemented if ONLY 1 doctor needs to be in the system rather than creating each time
+            //modelBuilder.Entity<Doctor>().HasData(new Doctor { DoctorId = Guid.NewGuid(), DoctorName = "ARTC" });
         }
     }
 
@@ -30,7 +33,9 @@ namespace src.Database
         {
             services.AddDbContext<Appt_EF_DataContext>(options =>
             {
+                // options.UseNpgsql(configuration.GetConnectionString("Appt_Db"));
                 options.UseNpgsql(configuration.GetConnectionString("Appt_Db"));
+
             });
             return services;
         }

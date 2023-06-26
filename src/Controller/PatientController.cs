@@ -7,26 +7,26 @@ using src.Entities;
 namespace src.Controller
 {
     [Controller]
-    [Route("/doctor")]
-    public class DoctorController : ControllerBase
+    [Route("/patient")]
+    public class PatientController : ControllerBase
     {
-        private readonly IDoctorService _doctorService;
+        private readonly IPatientService _patientService;
         //private Appt_EF_DataContext _db;
         //private Doctor newEntry;  
-        public DoctorController(IDoctorService doctorService)
+        public PatientController(IPatientService patientService)
         {
-            _doctorService = doctorService;
+            _patientService = patientService;
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody] CreateDoctorRequest request)
+        public async Task<IActionResult> Post([FromBody] CreatePatientRequest request)
         {
            //if  ( _db.Doctor.Find(_db.Doctor, request) != null ) 
            // {
            //     return BadRequest("Doctor's Name already found - Cannot create entry again!!!");
            // }
-            await _doctorService.Create(request.DoctorName);
-            return Ok("Doctor "+ request.DoctorName + " created successfully...");
+            await _patientService.Create(request.PatientName);
+            return Ok("Patient "+ request.PatientName + " created successfully...");
         }
 
         //public IActionResult Index()

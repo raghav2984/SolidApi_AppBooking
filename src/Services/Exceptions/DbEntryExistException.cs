@@ -5,7 +5,7 @@ namespace src.Services.Exceptions
     [Serializable]
     internal class DbEntryExistException : Exception
     {
-        public DbEntryExistException() : base("Doctor name exist in the database. Cannot create new entry!!!" + Environment.NewLine)
+        public DbEntryExistException() : base("Name exist in the database. Cannot create new entry!!!" + Environment.NewLine)
         {
         }
 
